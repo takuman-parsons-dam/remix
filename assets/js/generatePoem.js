@@ -11,6 +11,7 @@ const svgFiles = {
 
 // Get elements by class name
 const poemElement = document.querySelector(".poem");
+const poemContainer = document.querySelector(".poem-container");
 const authorElement = document.querySelector(".author, .author-adjusted");
 authorElement.innerHTML = authorText;
 
@@ -28,4 +29,7 @@ if (currentPage.indexOf("typeface") > -1) {
     .then((svgContent) => {
       poemElement.innerHTML = svgContent;
     });
+  if (currentPage === "animation_1.html") {
+    poemContainer.classList.add("svg-revealAnimation");
+  }
 }

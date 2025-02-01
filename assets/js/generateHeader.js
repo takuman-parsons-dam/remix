@@ -13,6 +13,8 @@ const pageTextDict = {
     "<span class='header-category-name'>VISUAL HIERARCHY</span><br><span class='header-variation-name'>3. EMPHASIS</span>",
   "hierarchy_4.html":
     "<span class='header-category-name'>VISUAL HIERARCHY</span><br><span class='header-variation-name'>4. FONT OPTIMIZATION</span>",
+  "animation_1.html":
+    "<span class='header-category-name'>ANIMATION</span><br><span class='header-variation-name'>1. Fade In</span>",
 };
 
 // Find the page header element(s)

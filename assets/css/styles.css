@@ -51,6 +51,7 @@ html, body {
 .font-timesroman {
   font-family: "Times New Roman", Times, serif;
   font-size: 1.6rem !important;
+  font-weight: 100;
 }
 
 /* --------------------
@@ -80,7 +81,7 @@ html, body {
   height: 90vh;
   width: 100vw;
   padding: 1rem;
-  display: flex;
+  display: flex !important;
   flex-direction: column;
   justify-content: center;
 }
@@ -153,4 +154,22 @@ html, body {
 
 .link-adjusted {
   font-weight: 400;
+}
+
+/* --------------------
+  Animation
+-------------------- */
+
+@keyframes revealAnimation {
+  0% {
+    clip-path: inset(0 0 72% 0);
+  }
+  100% {
+    clip-path: inset(0 0 20% 0);
+  }
+}
+
+.svg-revealAnimation {
+  display: block;
+  animation: revealAnimation 10s forwards;
 }
