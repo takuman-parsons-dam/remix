@@ -17,31 +17,34 @@ html, body {
 -------------------- */
 
 /* Serif Font */
-.font_baskervville { 
+.font-baskervville { 
   font-family: "Baskervville", serif;
 }
 
 /* Sans Serif Font */
-.font_carlito {
+.font-carlito {
   font-family: "Carlito"
 }
 
 /* Script Font */
-.font_alex {
+.font-alex {
   font-family: "Alex Brush", serif;
 }
 
 /* Handwritten Font */
-.font_caveat {
+.font-caveat {
   font-family: "Caveat", serif;
+}
+
+.font-color-gray {
+  color: #595959;
 }
 
 /* Header */
 .page-header {
   height: 5vh;
   padding: 1rem;
-  font-size: 0.9rem;
-  color: #444;
+  font-size: 1.5rem;
 }
 
 .poem-container {
@@ -54,11 +57,18 @@ html, body {
 }
 
 /* Poem text */
-.poem {
-  font-size: 4rem;
-  line-height: 1.4;
+.poem-text {
   margin-bottom: 2rem;
   padding: 0 0 0 8rem;
+  font-size: 4rem;
+  line-height: 1.4;
+}
+
+.poem-spacing {
+  margin-bottom: 2rem;
+  padding: 0 0 0 8rem;
+  scale: 0.99;
+  transform: translate(-5px, 5px)
 }
 
 /* Poem attribution */
@@ -66,7 +76,6 @@ html, body {
   text-align: right;
   font-size: 2rem;
   font-style: italic;
-  color: #555;
   padding: 0 11rem 0 0;
 }
 
@@ -75,7 +84,6 @@ html, body {
   height: 5vh;
   margin: 0;
   font-size: 1.1rem;
-  color: #444;
   padding: 1rem;
   text-align: right;
 }

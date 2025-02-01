@@ -3,12 +3,11 @@ const pageTextDict = {
   "typeface_2.html": "Typeface 2 (Sans-Serif)",
   "typeface_3.html": "Typeface 3 (Script)",
   "typeface_4.html": "Typeface 4 (Desiplay)",
+  "spacing_1.html": "Spacing 1 (Tracking)",
+  "spacing_2.html": "Spacing 2 (Leading)",
+  "spacing_3.html": "Spacing 3 (Kerning)",
+  "spacing_4.html": "Spacing 4 (Color Contrast)",
 };
-
-// Get the current HTML file name
-const pathArray = window.location.pathname.split("/");
-console.log(pathArray);
-const currentPage = pathArray[pathArray.length - 1];
 
 // Find the page header element(s)
 const pageHeaders = document.querySelectorAll(".page-header");
