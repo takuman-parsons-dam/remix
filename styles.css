@@ -1,0 +1,81 @@
+/* Import */
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Baskervville:ital@0;1&family=Carlito:ital,wght@0,400;0,700;1,400;1,700&family=Caveat:wght@400..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+  background-color: #fff;
+  color: #000;
+}
+
+/* --------------------
+  Font
+-------------------- */
+
+/* Serif Font */
+.font_baskervville { 
+  font-family: "Baskervville", serif;
+}
+
+/* Sans Serif Font */
+.font_carlito {
+  font-family: "Carlito"
+}
+
+/* Script Font */
+.font_alex {
+  font-family: "Alex Brush", serif;
+}
+
+/* Handwritten Font */
+.font_caveat {
+  font-family: "Caveat", serif;
+}
+
+/* Header */
+.page-header {
+  height: 5vh;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.poem-container {
+  height: 90vh;
+  width: 100vw;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Poem text */
+.poem {
+  font-size: 4rem;
+  line-height: 1.4;
+  margin-bottom: 2rem;
+  padding: 0 0 0 8rem;
+}
+
+/* Poem attribution */
+.author {
+  text-align: right;
+  font-size: 2rem;
+  font-style: italic;
+  color: #555;
+  padding: 0 11rem 0 0;
+}
+
+/* Footer */
+.page-footer {
+  height: 5vh;
+  margin: 0;
+  font-size: 1.1rem;
+  color: #444;
+  padding: 1rem;
+  text-align: right;
+}
