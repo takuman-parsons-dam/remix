@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   ];
 
   const currentFile = window.location.pathname.split("/").pop();
-  const footer = document.querySelector(".page-footer");
+  const footer = document.querySelector(".page-footer, .page-footer-adjusted");
 
   let footerHTML = "";
 

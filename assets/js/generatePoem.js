@@ -11,15 +11,19 @@ const svgFiles = {
 
 // Get elements by class name
 const poemElement = document.querySelector(".poem");
-const authorElement = document.querySelector(".author");
-
+const authorElement = document.querySelector(".author, .author-adjusted");
 authorElement.innerHTML = authorText;
 
 if (currentPage.indexOf("typeface") > -1) {
   poemElement.innerHTML = poemText;
-  // poemElement.classList.add("poem-text");
 } else if (currentPage.indexOf("spacing") > -1) {
   fetch(`../assets/svg/${svgFiles[currentPage]}.svg`)
+    .then((response) => response.text())
+    .then((svgContent) => {
+      poemElement.innerHTML = svgContent;
+    });
+} else {
+  fetch(`../assets/svg/poem_spacing_4.svg`)
     .then((response) => response.text())
     .then((svgContent) => {
       poemElement.innerHTML = svgContent;

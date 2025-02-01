@@ -1,5 +1,5 @@
 /* Import */
-@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Baskervville:ital@0;1&family=Carlito:ital,wght@0,400;0,700;1,400;1,700&family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Baskervville:ital@0;1&family=Carlito:ital,wght@0,400;0,700;1,400;1,700&family=Caveat:wght@400..700&family=Darker+Grotesque:wght@300..900&display=swap');
 
 * {
     margin: 0;
@@ -36,15 +36,44 @@ html, body {
   font-family: "Caveat", serif;
 }
 
+
+.font-darker {
+  font-family: "Darker Grotesque", serif;
+  line-height: 0.8 !important;
+  letter-spacing: 1px;
+}
+
+
 .font-color-gray {
   color: #595959;
 }
 
-/* Header */
+.font-timesroman {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.6rem !important;
+}
+
+/* --------------------
+  Header
+-------------------- */
+
 .page-header {
   height: 5vh;
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
+  line-height: 0.9;
+}
+
+.header-category-name {
+  font-size: 1rem;
+  padding: 0 0 0 0.25rem;
+}
+
+.header-variation-name {
+  font-size: 1.1rem;
+  padding: 0 0 0 0.25rem;
+  transform: translate(100, 100);
+  font-weight: 600;
 }
 
 .poem-container {
@@ -71,6 +100,10 @@ html, body {
   transform: translate(-5px, 5px)
 }
 
+.poem-spacing-size-adjusted {
+  scale: 1.1;
+}
+
 /* Poem attribution */
 .author {
   text-align: right;
@@ -79,11 +112,45 @@ html, body {
   padding: 0 11rem 0 0;
 }
 
+.author-adjusted {
+  text-align: right;
+  font-size: 2rem;
+  font-style: italic;
+  padding: 5rem 0rem 0 0;
+  transform: translate(70px, 0)
+}
+
 /* Footer */
 .page-footer {
   height: 5vh;
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding: 1rem;
   text-align: right;
+}
+
+.page-footer-adjusted {
+  height: 5vh;
+  margin: 0;
+  font-size: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.background-light-gray {
+  background-color: #f2f2f2;
+}
+
+.centering {
+  display: flex;
+  justify-content: center;
+}
+
+.link-adjusted a {
+  color: #595959;
+  font-weight: 600;
+}
+
+.link-adjusted {
+  font-weight: 400;
 }
