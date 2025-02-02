@@ -10,9 +10,9 @@ const pageTextDict = {
   "hierarchy_1.html": "Visual Hierarchy 1 (Position)",
   "hierarchy_2.html": "Visual Hierarchy 2 (Background)",
   "hierarchy_3.html":
-    "<span class='header-category-name'>VISUAL HIERARCHY</span><br><span class='header-variation-name'>3. EMPHASIS</span>",
+    "<span class='header-category-name'>VISUAL HIERARCHY</span><br><span class='header-variation-name'>3. Emphasis</span>",
   "hierarchy_4.html":
-    "<span class='header-category-name'>VISUAL HIERARCHY</span><br><span class='header-variation-name'>4. FONT OPTIMIZATION</span>",
+    "<span class='header-category-name'>VISUAL HIERARCHY</span><br><span class='header-variation-name'>4. Font Optimization</span>",
   "animation_1.html":
     "<span class='header-category-name'>ANIMATION</span><br><span class='header-variation-name'>1. Wipe Effect</span>",
   "animation_2.html":
