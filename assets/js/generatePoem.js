@@ -23,13 +23,63 @@ if (currentPage.indexOf("typeface") > -1) {
     .then((svgContent) => {
       poemElement.innerHTML = svgContent;
     });
-} else {
+} // Fetch the SVG content
+else
   fetch(`../assets/svg/poem_spacing_4.svg`)
     .then((response) => response.text())
     .then((svgContent) => {
+      // Insert the SVG content into the DOM
       poemElement.innerHTML = svgContent;
+
+      // Apply classes and set up animations based on currentPage
+      if (currentPage === "animation_1.html") {
+        poemContainer.classList.add("svg-wipeAnimation");
+        authorElement.classList.add("author-fadeAnimation");
+      }
+      if (currentPage === "animation_2.html") {
+        poemContainer.classList.add("svg-fadeAnimation");
+        authorElement.classList.add("author-fadeAnimation");
+      }
+      if ((currentPage === "animation_3.html") | (currentPage === "animation_4.html")) {
+        poemElement.classList.add("svg-fadeAnimationByEvent");
+        authorElement.classList.add("author-fadeAnimationByEvent");
+
+        const paths = poemElement.querySelectorAll("svg path");
+        let currentPath = 0;
+
+        if (currentPage === "animation_3.html") {
+          document.body.addEventListener("click", function () {
+            // Animate each path one-by-one
+            if (currentPath < paths.length) {
+              paths[currentPath].classList.add("animate");
+              currentPath++;
+            }
+            // When all paths have been animated, animate the author element
+            else if (currentPath === paths.length) {
+              authorElement.classList.add("animate");
+              currentPath++;
+            }
+          });
+        }
+        if (currentPage === "animation_4.html") {
+          document.body.addEventListener("mousemove", function mouseMoveHandler() {
+            if (currentPath < paths.length) {
+              const currentElement = paths[currentPath];
+              if (!currentElement.classList.contains("animate")) {
+                currentElement.classList.add("animate");
+                currentElement.addEventListener(
+                  "animationend",
+                  function () {
+                    currentPath++;
+                  },
+                  { once: true }
+                );
+              }
+            } else if (currentPath === paths.length) {
+              authorElement.classList.add("animate");
+              currentPath++;
+            }
+          });
+        }
+      }
     });
-  if (currentPage === "animation_1.html") {
-    poemContainer.classList.add("svg-revealAnimation");
-  }
-}

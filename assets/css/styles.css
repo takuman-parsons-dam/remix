@@ -160,16 +160,73 @@ html, body {
   Animation
 -------------------- */
 
-@keyframes revealAnimation {
-  0% {
-    clip-path: inset(0 0 72% 0);
+@keyframes wipeAnimation {
+  from {
+    clip-path: inset(0 100% 0 0);
   }
-  100% {
-    clip-path: inset(0 0 20% 0);
+  to {
+    clip-path: inset(0 0 0 0);
   }
 }
 
-.svg-revealAnimation {
+.svg-wipeAnimation {
   display: block;
-  animation: revealAnimation 10s forwards;
+}
+
+.svg-wipeAnimation svg path {
+  animation: wipeAnimation 1.5s forwards;
+  animation-fill-mode: both;
+}
+
+.svg-wipeAnimation svg path:nth-of-type(1) {
+  animation-delay: 1s;
+}
+.svg-wipeAnimation svg path:nth-of-type(2) {
+  animation-delay: 3s;
+}
+.svg-wipeAnimation svg path:nth-of-type(3) {
+  animation-delay: 5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.svg-fadeAnimation svg path {
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+}
+
+.svg-fadeAnimation svg path:nth-of-type(1) {
+  animation-delay: 1s;
+}
+.svg-fadeAnimation svg path:nth-of-type(2) {
+  animation-delay: 3s;
+}
+.svg-fadeAnimation svg path:nth-of-type(3) {
+  animation-delay: 5s;
+}
+
+.author-fadeAnimation {
+  opacity: 0;
+  animation: fadeIn 1.5s forwards;
+  animation-delay: 7s;
+}
+
+/* By Click */
+.svg-fadeAnimationByEvent svg path {
+  opacity: 0;
+}
+
+.svg-fadeAnimationByEvent svg path.animate {
+  animation: fadeIn 1.5s forwards;
+}
+
+.author-fadeAnimationByEvent {
+  opacity: 0;
+}
+
+.author-fadeAnimationByEvent.animate {
+  animation: fadeIn 1.5s forwards;
 }
