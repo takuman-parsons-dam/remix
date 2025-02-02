@@ -18,9 +18,13 @@ const pageTextDict = {
   "animation_2.html":
     "<span class='header-category-name'>ANIMATION</span><br><span class='header-variation-name'>2. Fade In</span>",
   "animation_3.html":
-    "<span class='header-category-name'>ANIMATION</span><br><span class='header-variation-name'>3. Click-Based Fade In</span>",
+    "<span class='header-category-name'>ANIMATION</span><br><span class='header-variation-name'>3. Click-Triggered Fade In</span>",
   "animation_4.html":
-    "<span class='header-category-name'>ANIMATION</span><br><span class='header-variation-name'>4. Scroll-Based Fade In</span>",
+    "<span class='header-category-name'>ANIMATION</span><br><span class='header-variation-name'>4. MouseMove-Triggered Fade In</span>",
+  "fun_1.html":
+    "<span class='header-category-name'>FUN</span><br><span class='header-variation-name'>1. Voice Reader</span>",
+  "fun_2.html":
+    "<span class='header-category-name'>FUN</span><br><span class='header-variation-name'>2. Snowflake Animation</span>",
 };
 
 // Find the page header element(s)
