@@ -24,7 +24,10 @@ const pageTextDict = {
   "fun_1.html":
     "<span class='header-category-name'>FUN</span><br><span class='header-variation-name'>1. Voice Reader</span>",
   "fun_2.html":
-    "<span class='header-category-name'>FUN</span><br><span class='header-variation-name'>2. Snowflake Animation</span>",
+    "<span class='header-category-name'>FUN</span><br><span class='header-variation-name'>2. Background with CSS</span>",
+  "fun_3.html":
+    "<span class='header-category-name'>FUN</span><br><span class='header-variation-name'>3. Background with video</span>",
+  "fun_4.html": "<span class='header-category-name'>FUN</span><br><span class='header-variation-name'>4. MIX!</span>",
 };
 
 // Find the page header element(s)

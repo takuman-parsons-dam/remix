@@ -82,4 +82,8 @@ else
           });
         }
       }
+      if (currentPage === "fun_4.html") {
+        poemContainer.classList.add("svg-fadeAnimation");
+        authorElement.classList.add("author-fadeAnimation");
+      }
     });
