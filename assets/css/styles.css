@@ -10,6 +10,8 @@
 html, body {
   background-color: #fff;
   color: #000;
+  position: relative;
+  z-index: 1;
 }
 
 /* --------------------
@@ -123,6 +125,7 @@ html, body {
 
 /* Footer */
 .page-footer {
+  position: fixed;
   height: 5vh;
   margin: 0;
   font-size: 1rem;
@@ -131,11 +134,14 @@ html, body {
 }
 
 .page-footer-adjusted {
+  position: fixed;
+  width: 100vw;
   height: 5vh;
   margin: 0;
   font-size: 1rem;
   padding: 1rem;
   text-align: center;
+  z-index: 15;
 }
 
 .background-light-gray {
@@ -237,7 +243,7 @@ audio {
   margin: 20px auto;
   border-radius: 10px;
   background: #fff;
-  position: absolute; /* or relative, fixed */
+  position: absolute;
   top: 76%;
   left: 57%;
   transform: translate(-50%, -50%); Centering;
@@ -249,8 +255,8 @@ audio {
   left: 0;
   width: 100%;
   height: 100%;
-  pointer-events: none; /* so they don’t block clicks */
-  z-index: 9999;
+  pointer-events: none;
+  z-index: 10;
 }
 
 .snowflake {
@@ -277,3 +283,27 @@ audio {
 }
 
 
+
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.video-container video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  opacity: 30%;
+}
