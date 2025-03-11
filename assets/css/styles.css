@@ -18,6 +18,52 @@ html, body {
   Font
 -------------------- */
 
+/* FirstChristmas */
+@font-face {
+  font-family: 'FirstChristmas';
+  src: url('../fonts/FirstChristmas.woff2') format('woff2'),
+       url('../fonts/FirstChristmas.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* FrostbittenWanker */
+@font-face {
+  font-family: 'FrostbittenWanker';
+  src: url('../fonts/FrostbittenWanker.woff2') format('woff2'),
+       url('../fonts/FrostbittenWanker.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Maple3Cartoon */
+@font-face {
+  font-family: 'Maple3Cartoon';
+  src: url('../fonts/Maple3Cartoon.woff2') format('woff2'),
+       url('../fonts/Maple3Cartoon.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* SantasAirMail */
+@font-face {
+  font-family: 'SantasAirMail';
+  src: url('../fonts/SantasAirMail.woff2') format('woff2'),
+       url('../fonts/SantasAirMail.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* MSGothic */
+@font-face {
+  font-family: 'MSGothic';
+  src: url('../fonts/MS-Gothic.woff') format('woff2'),
+       url('../fonts/MS-Gothic.woff2') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 /* Serif Font */
 .font-baskervville { 
   font-family: "Baskervville", serif;
@@ -38,13 +84,38 @@ html, body {
   font-family: "Caveat", serif;
 }
 
+/* FirstChristmas */
+.font-first-christmas {
+  font-family: "FirstChristmas";
+  font-size: 100px !important;
+}
+
+/* FrostbittenWanker */
+.font-frost-bitten-wanker {
+  font-family: "FrostbittenWanker";
+  font-size: 75px !important;
+}
+
+/* Maple3Cartoon */
+.font-maple-3-cartoon {
+  font-family: "Maple3Cartoon";
+  font-size: 100px !important;
+  line-height: 1.0 !important;
+}
+
+/* SantasAirMail */
+.santas-air-mail {
+  text-transform: uppercase;
+  font-family: "SantasAirMail";
+  font-size: 50px !important;
+  line-height: 2.5 !important;
+}
 
 .font-darker {
   font-family: "Darker Grotesque", serif;
   line-height: 0.8 !important;
   letter-spacing: 1px;
 }
-
 
 .font-color-gray {
   color: #595959;
@@ -282,9 +353,6 @@ audio {
   }
 }
 
-
-
-
 .video-container {
   position: fixed;
   top: 0;
@@ -306,4 +374,15 @@ audio {
   transform: translate(-50%, -50%);
   object-fit: cover;
   opacity: 30%;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.column {
+  flex: 50%;
 }

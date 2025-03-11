@@ -5,6 +5,8 @@ document.addEventListener("DOMContentLoaded", function () {
     { name: "hierarchy", label: "Hierarchy" },
     { name: "animation", label: "Animation" },
     { name: "fun", label: "Fun" },
+    { name: "snowyfonts", label: "Snowy Fonts" },
+    { name: "aa", label: "ASCII ARTS" },
   ];
 
   const currentFile = window.location.pathname.split("/").pop();

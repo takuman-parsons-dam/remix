@@ -13,9 +13,12 @@ const svgFiles = {
 const poemElement = document.querySelector(".poem");
 const poemContainer = document.querySelector(".poem-container");
 const authorElement = document.querySelector(".author, .author-adjusted");
-authorElement.innerHTML = authorText;
 
-if (currentPage.indexOf("typeface") > -1) {
+if (authorElement) {
+  authorElement.innerHTML = authorText;
+}
+
+if (/typeface|snowyfonts/.test(currentPage)) {
   poemElement.innerHTML = poemText;
 } else if (currentPage.indexOf("spacing") > -1) {
   fetch(`../assets/svg/${svgFiles[currentPage]}.svg`)

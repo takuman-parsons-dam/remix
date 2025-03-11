@@ -27,7 +27,24 @@ const pageTextDict = {
     "<span class='header-category-name'>FUN</span><br><span class='header-variation-name'>2. Background with CSS</span>",
   "fun_3.html":
     "<span class='header-category-name'>FUN</span><br><span class='header-variation-name'>3. Background with video</span>",
-  "fun_4.html": "<span class='header-category-name'>FUN</span><br><span class='header-variation-name'>4. MIX!</span>",
+  "fun_4.html":
+    "<span class='header-category-name'>Snowy Font</span><br><span class='header-variation-name'>4. MIX!</span>",
+  "snowyfonts_1.html":
+    "<span class='header-category-name'>Snowy Font</span><br><span class='header-variation-name'>1. First Christmas</span>",
+  "snowyfonts_2.html":
+    "<span class='header-category-name'>Snowy Font</span><br><span class='header-variation-name'>2. Maple 3 Cartoon</span>",
+  "snowyfonts_3.html":
+    "<span class='header-category-name'>Snowy Font</span><br><span class='header-variation-name'>3. Santa's Air Mail</span>",
+  "snowyfonts_4.html":
+    "<span class='header-category-name'>Snowy Font</span><br><span class='header-variation-name'>4. Frostbitten Wanker</span>",
+  "aa_1.html":
+    "<span class='header-category-name'>ASCII ART</span><br><span class='header-variation-name'>1. Snowman</span>",
+  "aa_2.html":
+    "<span class='header-category-name'>ASCII ART</span><br><span class='header-variation-name'>2. Christmas Tree</span>",
+  "aa_3.html":
+    "<span class='header-category-name'>ASCII ART</span><br><span class='header-variation-name'>3. Couple in the winter</span>",
+  "aa_4.html":
+    "<span class='header-category-name'>ASCII ART</span><br><span class='header-variation-name'>4. Snowman2</span>",
 };
 
 // Find the page header element(s)
