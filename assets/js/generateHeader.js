@@ -2,7 +2,7 @@ const pageTextDict = {
   "typeface_1.html": "Typeface 1 (Serif)",
   "typeface_2.html": "Typeface 2 (Sans-Serif)",
   "typeface_3.html": "Typeface 3 (Script)",
-  "typeface_4.html": "Typeface 4 (Desiplay)",
+  "typeface_4.html": "Typeface 4 (Display)",
   "spacing_1.html": "Spacing&Color 1 (Tracking)",
   "spacing_2.html": "Spacing&Color 2 (Leading)",
   "spacing_3.html": "Spacing&Color 3 (Kerning)",
